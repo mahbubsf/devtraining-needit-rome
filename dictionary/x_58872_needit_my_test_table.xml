@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" label="TestTable1" max_length="40" name="x_58872_needit_my_test_table" sizeclass="3" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Users" max_length="32" name="users" reference="sys_user" type="reference"/>
+        <element default="Syed Mahubb" label="User Name" max_length="40" name="user_name" type="string"/>
+        <index name="index">
+            <element name="users"/>
+        </index>
+    </element>
+</database>
